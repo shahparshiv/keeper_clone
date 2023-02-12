@@ -13,7 +13,6 @@ const AddTask = () => {
     const url = 'http://localhost:8000/api/tasks/'
 
     const handleSubmit = (event) => {
-        event.preventDefault()
         const data = {
             title,
             description: desc

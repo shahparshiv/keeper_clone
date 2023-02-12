@@ -11,3 +11,8 @@ class TaskModelSerializer(serializers.ModelSerializer):
     #     print(self)
     #     print(obj)
     #     return obj.author.username
+
+class TaskUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Task
+        fields=['id','status']
