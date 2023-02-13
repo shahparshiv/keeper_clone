@@ -1,6 +1,8 @@
 import axios from "axios";
 import {memo, useState} from "react";
+import "./task-list.css"
 const update_url = 'http://localhost:8000/api/task_update/'
+
 
 const TaskList = (props) => {
     const [status, setStatus] = useState(false)
@@ -24,15 +26,15 @@ const updateStatus = (event) => {
     const {data} = props
     return (
         <div>
-            <h3>ToDo Tasks</h3>
-            <div>
+            <h2 class="TodoTitle">ToDo Tasks</h2>
+            <div class="tasks-container">
                 {data.map((item)=>{
-                    return <div key={item.id}>
-                        <p>{item.title}</p>
+                    return <div key={item.id} class="task-card">
+                        <h4>{item.title}</h4>
                         <p>{item.description}</p>
                         {
                         item.status ?
-                            <p>Task completed!!</p> :
+                            <p class="completion-msg"><em>Task completed!!</em></p> :
                             <button id={item.id} onClick={updateStatus} value={item.status}>Complete</button>                        
                         }
                     </div>

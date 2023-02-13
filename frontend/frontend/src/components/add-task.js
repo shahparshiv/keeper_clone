@@ -42,7 +42,7 @@ const AddTask = () => {
                 value={desc}
                 placeholder="Description"
             />
-            <input class="submit-button" type="submit"/>
+            <input class="submit-button" type="submit" value="Add Task"/>
             </form>
         </div>
     )
