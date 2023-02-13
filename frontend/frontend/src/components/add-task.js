@@ -26,24 +26,24 @@ const AddTask = () => {
     }
 
     return (
-        <div>
+        <div class="new-task-card">
             <h2>Add New Task</h2>
             <form onSubmit={handleSubmit}>
-            <label>Title: 
+            {/* <label>Title:</label>  */}
             <input type="text" 
+                class="title-input"
                 onChange={(e)=> setTitle(e.target.value)} 
+                placeholder="Title"
                 value={title}/>
-            </label>
-            <label>Description: 
-            <input type="text" 
+            {/* <label>Description:</label>  */}
+            <textarea type="text" 
                 className="desctextbox"
                 onChange={(e)=>setDesc(e.target.value)}
                 value={desc}
+                placeholder="Description"
             />
-            </label>
-            <input type="submit"/>
+            <input class="submit-button" type="submit"/>
             </form>
-            <hr />
         </div>
     )
 }

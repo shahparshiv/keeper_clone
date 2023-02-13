@@ -1,3 +1,53 @@
 .desctextbox {
-    min-height: 5vh;
+    height: 8em;
+    width: 55%;
+    border-radius: 1em;
+    font-size: 1.2em;
+}
+
+h2{
+    text-align: center;
+}
+.new-task-card{
+    font-family: Montserrat;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.5em;
+    display: block;
+    width: 30%;
+    height: 20em;
+    border: 1px;
+    border-radius: 2em;
+    /* border-color: black; */
+    align-content: center;
+    background-color: darkgray;
+}
+
+input{
+    font-family: Montserrat;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.title-input{
+    width: 55%;
+    font-size: 1.25em;
+    text-align: center;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    margin-bottom: 0.5em;
+}
+
+.submit-button{
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
